@@ -11,13 +11,26 @@
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <i class="fas fa-robot"></i> AI知识库
+                <i class="fas fa-robot" aria-hidden="true"></i>
+                <span>AI知识库</span>
             </div>
             <div class="nav-links">
-                <a href="index.html"><i class="fas fa-home"></i> 首页</a>
-                <a href="categories.html"><i class="fas fa-folder"></i> 分类</a>
-                <a href="updates.html"><i class="fas fa-clock"></i> 更新</a>
-                <a href="about.html"><i class="fas fa-user"></i> 关于</a>
+                <a href="index.html" title="返回首页">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                    <span>首页</span>
+                </a>
+                <a href="categories.html" title="浏览分类">
+                    <i class="fas fa-folder" aria-hidden="true"></i>
+                    <span>分类</span>
+                </a>
+                <a href="updates.html" title="查看更新">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <span>更新</span>
+                </a>
+                <a href="about.html" title="关于本站">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                    <span>关于</span>
+                </a>
             </div>
         </nav>
     </header>
@@ -27,7 +40,10 @@
             <h1>欢迎来到 AI 知识库</h1>
             <p>这里收录了我在学习和实践人工智能过程中的笔记、心得和资源分享</p>
             <div class="search-container">
-                <input type="text" class="search-input" placeholder="搜索知识库内容...">
+                <input type="text" class="search-input" placeholder="搜索知识库内容..." aria-label="搜索">
+                <button type="button" class="search-button" aria-label="搜索">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </button>
             </div>
         </section>
 
